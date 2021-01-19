@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule</title>
+    <style>
+        th, td{
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            font-family: 'Courier New', Courier, monospace;
+            /*border: 1px solid black; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a weekly schedule for yourself-->
+    <p class="center"></p><table>
+        <caption>Weekly Schedule for Sara</caption>
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <th>Morning</th> <td style="background-color: red" colspan="5" rowspan="2">School</td>
+            <td style="background-color: green" colspan="2" rowspan="1">Sleep</td>
+        </tr>
+        <tr>
+             <th>Afternoon</th> <td style="background-color:indianred" colspan="2">Relax</td>
+                    </tr>                
+        <tr>
+            <th>Evening</th><td style="background-color: blue" colspan="7">Study</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>Contact</caption>
+        <tr>
+            <th>Name</th>
+            <td>Sara Bertuldo</td>
+        </tr>
+        <tr>
+            <th style="background-color: yellow" rowspan="2">Contact Info</th>
+            <td>402-639-5894</td>
+        </tr>
+        <tr>
+            <td>sarabertuldo@gmail.com</td>
+        </tr>
+    </table>
+<br>
+    <p class="center"></p><table>
+        <caption>Weekly Schedule for Pup 'n Suds</caption>
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <th>Morning</th> <td style="background-color: red" colspan="5" rowspan="2">Open</td>
+            <td style="background-color: green" colspan="2" rowspan="2">Appointment Only</td>
+        </tr>
+        <tr>
+             <th>Afternoon</th>
+                    </tr>                
+        <tr>
+            <th>Evening</th><td style="background-color: blue" colspan="7">Closed</td>
+        </tr>
+    </table>
+    <p>
+    <form id="secondForm">
+        <h3>Basic Info</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="petName">Pet Name:</label>
+        <input type="text" id="petName">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone">
+    </p>
+
+    <p>
+        <h3>Preference on time of day</h3>
+        <input type="radio" id="timeChoice1" name="time" value="morning">
+        <label for="timeChoice1">Morning</label>
+
+        <input type="radio" id="timeChoice2" name="time" value="afternoon">
+        <label for="timeChoice2">Afternoon</label>
+
+        <input type="radio" id="timeChoice3" checked="checked" name="time" value="flexible">
+        <label for="timeChoice3">Flexible</label>
+
+        </p>
+
+        <p>
+        <h3>Services:</h3>
+        <input type="checkbox" id="serviceChoice1" name="services" value="bath" checked="checked">
+        <label for="serviceChoice1">Bath</label>
+
+        <input type="checkbox" id="serviceChoice2" name="services" value="haircut">
+        <label for="serviceChoice2">Haircut</label>
+
+        <input type="checkbox" id="serviceChoice3" name="services" value="nailTrim">
+        <label for="serviceChoice3">Nail trim</label>
+</p>
+
+<label for="breedType">Type of dog breed:</label>
+<select name="breedType" id="breedType" multiple>
+
+    <option value="bulldog">Bulldog</option>
+    <option value="borderCollie">Border Collie</option>
+    <option value="australianShepherd" selected>Australian Shepherd</option>
+    <option value="dalmation">Dalmation</option>
+    <option value="welshCorgi">Welsh Corgi</option>
+    <option value="shihTzu">Shih Tzu</option>
+    <option value="pomeranian">Pomeranian</option>
+    <option value="other">Other</option>
+</select>
+
+<p>
+<label for="textarea">If other, please write in dog breed:</label>
+<textarea id="textarea" class="container"></textarea>
+</p>
+
+</body>
+</html>
